@@ -11,8 +11,11 @@ overTen = 4.75
 flatChargeP = 125
 
 #Take the weight of the package
-weight = 1 
-bestOption = 2
+weight = 8.4 
+
+# Set default values so variables are always defined
+optionG = 0
+optionDrone = 0
 
 #Compare the prices to see cheapest
 # * for packages less than 2 lbs
@@ -25,7 +28,7 @@ if weight <= 2:
     print( "Your cheapest option is by drone $", optionDrone )  
   elif (optionG or optionDrone or flatChargeP) <  optionDrone:
     print( "Your cheapest option is by drone $", optionDrone )
-print("Option Drone : $",optionDrone , "Option Ground Premium: $",flatChargeP )
+print("Option Drone : $", optionDrone , "Option Ground Premium: $", flatChargeP )
 
 # * for packages over 2 lbs but less than or equal to 6 lb
 if (weight > 2 or weight<= 6):
@@ -37,7 +40,7 @@ if (weight > 2 or weight<= 6):
     print( "Your cheapest option is by drone $", optionDrone )  
   elif (optionG or optionDrone or flatChargeP) <  optionDrone:
     print( "Your cheapest option is by drone $", optionDrone )
-print("Option Drone : $",optionDrone , "Option Ground Premium: $",flatChargeP )
+print("Option Ground",optionG,"Option Drone : $",optionDrone , "Option Ground Premium: $",flatChargeP )
 
 # * for packages over 6 lbs but less than or equal to 10 lb
 if (weight > 6 or weight<= 10):
@@ -49,7 +52,7 @@ if (weight > 6 or weight<= 10):
     print( "Your cheapest option is by drone $", optionDrone )  
   elif (optionG or optionDrone or flatChargeP) <  optionDrone:
     print( "Your cheapest option is by drone $", optionDrone )
-print("Option Drone : $",optionDrone , "Option Ground Premium: $",flatChargeP )
+print( "Option Ground",optionG,"Option Drone : $",optionDrone , "Option Ground Premium: $",flatChargeP )
 
 # * for packages over 10 lb
 if weight > 10:
@@ -59,8 +62,8 @@ if weight > 10:
     print( "Your cheapest option is by ground $", optionG )
   elif (optionG or optionDrone or flatChargeP) < flatChargeP:
     print( "Your cheapest option is by drone $", optionDrone )  
-  elif (optionG or optionDrone or flatChargeP) < optionDrone:
+  elif (optionG or optionDrone or flatChargeP) <  optionDrone:
     print( "Your cheapest option is by drone $", optionDrone )
-print("Option Drone : $",optionDrone , "Option Ground Premium: $",flatChargeP )
+print("Option Ground",optionG,"Option Drone : $",optionDrone , "Option Ground Premium: $",flatChargeP )
 
   #not sure why the other if statements are printing when the weight doesnt agree with the condition.
