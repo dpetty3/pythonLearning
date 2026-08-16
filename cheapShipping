@@ -1,0 +1,66 @@
+# Program for finding the cheapest way for shipping
+
+# Ground shipping prices
+flatCharge = 20
+lessTwo = 1.50
+overTwoEqualSix = 3
+overSixEqualTen = 4
+overTen = 4.75
+
+# Ground shipping premium prices
+flatChargeP = 125
+
+#Take the weight of the package
+weight = 1 
+bestOption = 2
+
+#Compare the prices to see cheapest
+# * for packages less than 2 lbs
+if weight <= 2:
+  optionG = flatCharge + (weight*lessTwo)
+  optionDrone = optionG * 3 
+  if (optionG or optionDrone or flatChargeP) <= optionG:
+    print( "Your cheapest option is by ground $", optionG )
+  elif (optionG or optionDrone or flatChargeP) < flatChargeP:
+    print( "Your cheapest option is by drone $", optionDrone )  
+  elif (optionG or optionDrone or flatChargeP) <  optionDrone:
+    print( "Your cheapest option is by drone $", optionDrone )
+print("Option Drone : $",optionDrone , "Option Ground Premium: $",flatChargeP )
+
+# * for packages over 2 lbs but less than or equal to 6 lb
+if (weight > 2 or weight<= 6):
+  optionG = flatCharge + (weight*overTwoEqualSix)
+  optionDrone = optionG * 3 
+  if (optionG or optionDrone or flatChargeP) <= optionG:
+    print( "Your cheapest option is by ground $", optionG )
+  elif (optionG or optionDrone or flatChargeP) < flatChargeP:
+    print( "Your cheapest option is by drone $", optionDrone )  
+  elif (optionG or optionDrone or flatChargeP) <  optionDrone:
+    print( "Your cheapest option is by drone $", optionDrone )
+print("Option Drone : $",optionDrone , "Option Ground Premium: $",flatChargeP )
+
+# * for packages over 6 lbs but less than or equal to 10 lb
+if (weight > 6 or weight<= 10):
+  optionG = flatCharge + (weight*overSixEqualTen)
+  optionDrone = optionG * 3 
+  if (optionG or optionDrone or flatChargeP) <= optionG:
+    print( "Your cheapest option is by ground $", optionG )
+  elif (optionG or optionDrone or flatChargeP) < flatChargeP:
+    print( "Your cheapest option is by drone $", optionDrone )  
+  elif (optionG or optionDrone or flatChargeP) <  optionDrone:
+    print( "Your cheapest option is by drone $", optionDrone )
+print("Option Drone : $",optionDrone , "Option Ground Premium: $",flatChargeP )
+
+# * for packages over 10 lb
+if weight > 10:
+  optionG = flatCharge + (weight*overTen)
+  optionDrone = optionG * 3 
+  if (optionG or optionDrone or flatChargeP) <= optionG:
+    print( "Your cheapest option is by ground $", optionG )
+  elif (optionG or optionDrone or flatChargeP) < flatChargeP:
+    print( "Your cheapest option is by drone $", optionDrone )  
+  elif (optionG or optionDrone or flatChargeP) < optionDrone:
+    print( "Your cheapest option is by drone $", optionDrone )
+print("Option Drone : $",optionDrone , "Option Ground Premium: $",flatChargeP )
+
+  #not sure why the other if statements are printing when the weight doesnt agree with the condition.
