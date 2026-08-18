@@ -1,0 +1,5 @@
+
+x = "-".join(["Codecademy", "is", "awesome"])
+
+print(x) 
+# Prints: Codecademy-is-awesome
