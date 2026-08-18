@@ -1,0 +1,9 @@
+# Define a function my_function() with parameter x
+
+def my_function(x):
+  return x + 1
+
+# Invoke the function
+
+print(my_function(2))      # Output: 3
+print(my_function(3 + 5))  # Output: 9
