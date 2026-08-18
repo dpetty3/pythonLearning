@@ -1,0 +1,7 @@
+
+items = ['cake', 'cookie', 'bread']
+total_items = items + ['biscuit', 'tart']
+print(total_items)
+# Result: ['cake', 'cookie', 'bread', 'biscuit', 'tart']
+
+# or you can use .append()
