@@ -1,0 +1,7 @@
+# Print the numbers 0, 1, 2:
+for i in range(3):
+  print(i)
+
+# Print "WARNING" 3 times:
+for i in range(3):
+  print("WARNING")
