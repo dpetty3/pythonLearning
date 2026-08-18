@@ -1,0 +1,5 @@
+lambda argument(s): expression
+
+#A lambda function in Python is a simple, anonymous function that is defined without a name.
+#Lambda functions are useful when we want to write a quick function in one line that can be combined 
+#with other built-in functions such as map(), filter(), and apply(). This is the syntax to define lambda functions:
