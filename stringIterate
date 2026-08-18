@@ -1,0 +1,10 @@
+
+str = "hello"
+for c in str:
+  print(c)
+  
+# h
+# e
+# l
+# l
+# o
