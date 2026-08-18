@@ -1,0 +1,7 @@
+game = "Popular Nintendo Game: Mario Kart"
+
+print("l" in game) # Prints: True
+print("x" in game) # Prints: False
+
+# The in syntax is used to determine if a letter or a substring exists in a string. 
+# It returns True if a match is found, otherwise False is returned.
