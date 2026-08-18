@@ -1,0 +1,4 @@
+greeting = "Welcome To Chili's"
+
+print(greeting.lower())
+# Prints: welcome to chili's
