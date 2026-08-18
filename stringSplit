@@ -1,0 +1,8 @@
+
+text = "Silicon Valley"
+
+print(text.split())     
+# Prints: ['Silicon', 'Valley']
+
+print(text.split('i'))  
+# Prints: ['S', 'l', 'con Valley']
