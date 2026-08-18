@@ -1,0 +1,7 @@
+a = 2
+b = 3
+a < b  # evaluates to True
+a > b  # evaluates to False
+a >= b # evaluates to False
+a <= b # evaluates to True
+a <= a # evaluates to True
