@@ -1,0 +1,13 @@
+msg1 = 'Fred scored {} out of {} points.'
+msg1.format(3, 10)
+# => 'Fred scored 3 out of 10 points.'
+
+msg2 = 'Fred {verb} a {adjective} {noun}.'
+msg2.format(adjective='fluffy', verb='tickled', noun='hamster')
+# => 'Fred tickled a fluffy hamster.'
+
+# The Python string method .
+# format() replaces empty brace ({}) placeholders in the string with its arguments.
+# If keywords are specified within the placeholders,
+# they are replaced with the corresponding named arguments to the method.
+
