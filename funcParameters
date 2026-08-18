@@ -1,0 +1,5 @@
+
+def write_a_book(character, setting, special_skill):
+  print(character + " is in " + 
+        setting + " practicing her " + 
+        special_skill)
