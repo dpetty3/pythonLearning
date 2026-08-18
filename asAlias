@@ -1,0 +1,11 @@
+
+# Aliasing matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
+plt.plot(x, y)
+
+# Aliasing calendar as c
+import calendar as c
+print(c.month_name[1])
+
+# In Python, the as keyword can be used to give an alternative 
+# name as an alias for a Python module or function.
