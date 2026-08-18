@@ -1,0 +1,8 @@
+
+txt = "She said \"Never let go\"."
+print(txt) # She said "Never let go".
+
+# Backslashes (\) are used to escape 
+# characters in a Python string.
+# For instance, to print a string with quotation marks,
+# the given code snippet can be used.
