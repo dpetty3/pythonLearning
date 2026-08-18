@@ -1,0 +1,4 @@
+my_var = "dark knight"
+print(my_var.title()) 
+
+# Prints: Dark Knight
