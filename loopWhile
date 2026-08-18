@@ -1,0 +1,11 @@
+# This loop will only run 1 time
+hungry = True
+while hungry:
+  print("Time to eat!")
+  hungry = False
+
+# This loop will run 5 times
+i = 1
+while i < 6:
+  print(i)
+  i = i + 1
