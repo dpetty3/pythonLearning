@@ -1,0 +1,2 @@
+mountain_name = "Mount Kilimanjaro"
+print(mountain_name.find("o")) # Prints 1 in the console.
