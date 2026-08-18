@@ -1,0 +1,5 @@
+
+dinosaur = "T-Rex"
+
+print(dinosaur.upper()) 
+# Prints: T-REX
