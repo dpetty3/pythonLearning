@@ -1,0 +1,5 @@
+backpack = ['pencil', 'pen', 'notebook', 'textbook', 'pen', 'highlighter', 'pen']
+numPen = backpack.count('pen')
+
+print(numPen)
+# Output: 3
