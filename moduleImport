@@ -1,0 +1,13 @@
+
+# Three different ways to import modules:
+# First way
+import module
+module.function()
+
+# Second way
+from module import function
+function()
+
+# Third way
+from module import *
+function()
