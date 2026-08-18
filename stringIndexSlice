@@ -1,0 +1,10 @@
+str = 'yellow'
+str[1]     # => 'e'
+str[-1]    # => 'w'
+str[4:6]   # => 'ow'
+str[:4]    # => 'yell'
+str[-3:]   # => 'low'
+
+# A single character can be accessed with bracket notation ([index]), 
+# or a substring can be accessed using slicing ([start:end]).
+# Indexing with negative numbers counts from the end of the string
